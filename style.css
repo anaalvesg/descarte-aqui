@@ -26,6 +26,11 @@ li {
     list-style: none;
 }
 
+.contentHeader {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+    z-index: 99999999;
+}
+
 .contact {
     width: 100%;
     background-color: var(--green);
@@ -64,8 +69,6 @@ li {
     width: 100%;
     height: 100px;
     color: var(--white);
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
-    z-index: 999;
 }
 
 .mainHeader .mainHeaderWrapper {
@@ -89,6 +92,10 @@ li {
     font-weight: 600;
     line-height: normal;
     width: max-content;
+}
+
+.mainHeader .headerItems ul li a:hover {
+    color: var(--green);
 }
 
 .mainHeader .logoDescarte {
@@ -141,29 +148,39 @@ li {
 .mainBanner {
     width: 100%;
     background: linear-gradient(180deg, #091C47 0%, #0D3081 100%);
+    position: relative;
+    min-height: 630px;
+    height: 700px;
 }
 
 .mainBanner > img {
     width: 1100px;
     height: 630px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .mainBanner .bannerCard {
     background-color: var(--darkBlue);
-    height: 400px;
+    padding: 75px 50px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 650px;
 }
 
 .mainBanner .bannerCard .bannerCardContent {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: start;
 }
 
 .mainBanner .bannerCard p {
@@ -200,7 +217,6 @@ li {
     font-weight: 700;
     line-height: normal;
     gap: 10px;
-    display: flex;
 }
 
 .mainBanner .bannerCard .wppBtn img {
@@ -210,4 +226,142 @@ li {
 
 .mainBanner .bannerCard .wppBtn:hover {
     transform: scale(1.02);
+}
+
+#solution {
+    width: 100%;
+    background-color: var(--white);
+    padding: 130px 0 110px 0; 
+}
+
+#solution .solutionText {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#solution .solutionText .title {
+    color: var(--blackTxt);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#solution .solutionText .title span {
+    color: var(--blackTxt);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: block;
+    white-space: nowrap;
+}
+
+#solution .solutionText .text {
+    color: var(--blackTxt);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#solution .solutionText .stParagraph {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.wppBtn {
+    width: 384px;
+    height: 70px;   
+    border-radius: 300px;
+    background-color: var(--greenBtn);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 10px;
+}
+
+.wppBtn:hover {
+    transform: scale(1.02);
+}
+
+#howItWorks {
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.howItWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#howItWorks .sectionTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#howItWorks .sectionTitle p {
+    color: var(--blackTxt);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#howItWorks .sectionTitle h2 {
+    color: var(--blackTxt);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#howItWorks .cardWrapper .infoCards {
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#howItWorks .cardWrapper .infoCards:hover {
+    transform: translateY(-5px);
+}
+
+#howItWorks .cardWrapper .infoCards .cardDescription h3 {
+    color: var(--white);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0 35px;
 }
