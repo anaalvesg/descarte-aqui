@@ -1,2 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root {
+    --green: #228B22;
+    --darkBlue: #091C47;
+    --blue: #0D3081;
+    --white: #fff;
+    --blackTxt: #000;
+    --blueLogo: #1441A5;
+    --greenBtn: #3CA43C;
+}
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blackTxt);
+    transition: all 0.3s ease-in-out;
+}
+
+li {
+    list-style: none;
+}
+
+.contact {
+    width: 100%;
+    background-color: var(--green);
+    height: 40px;
+}
+
+.contact .headerWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 40px;
+    align-items: center;
+    justify-content: end;
+}
+
+.contact .headerWrapper .headerInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.contact .headerWrapper .headerInfo img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact .headerWrapper .headerInfo p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 100px;
+    color: var(--white);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+.mainHeader .mainHeaderWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 210px;
+    height: 100px;
+    align-items: center;
+}
+
+
+.mainHeader .headerItems ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100px;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: max-content;
+}
+
+.mainHeader .logoDescarte {
+    width: 350px;
+    height: 116px;
+    border-radius: 0 0 30px 30px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    z-index: 999;
+}
+
+.mainHeader .logoDescarte img {
+    width: 250px;
+    height: 35.191px;
+}
+
+.mainHeader .headerWppBtn {
+    width: 220px;
+    height: 60px;
+    background-color: var(--greenBtn);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainHeader .headerWppBtn:hover {
+    transform: scale(1.03);
+}
+
+.mainHeader .headerWppBtn a {
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainBanner {
+    width: 100%;
+    background: linear-gradient(180deg, #091C47 0%, #0D3081 100%);
+}
+
+.mainBanner > img {
+    width: 1100px;
+    height: 630px;
+}
+
+.mainBanner .bannerCard {
+    background-color: var(--darkBlue);
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBanner .bannerCard .bannerCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.mainBanner .bannerCard p {
+    color: var(--greenBtn);
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainBanner .bannerCard h1 {
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.mainBanner .bannerCard .wppBtn {
+    width: 462px;
+    height: 70px;   
+    border-radius: 300px;
+    background-color: var(--greenBtn);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 10px;
+    display: flex;
+}
+
+.mainBanner .bannerCard .wppBtn img {
+    width: 30px;
+    height: 30px;
+}
+
+.mainBanner .bannerCard .wppBtn:hover {
+    transform: scale(1.02);
+}
