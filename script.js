@@ -6,6 +6,8 @@
 //     }
 // })
 
+// CAIXINHAS FAQ
+
 document.querySelectorAll(".faqCard").forEach(function (card) {
   card.addEventListener("click", function () {
     const p = card.querySelector(".hide");
@@ -21,6 +23,7 @@ document.querySelectorAll(".faqCard").forEach(function (card) {
   });
 });
 
+// HEADER SCROLL
 
 document.addEventListener("DOMContentLoaded", function () {
 

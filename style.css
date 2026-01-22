@@ -238,7 +238,7 @@ header {
     line-height: normal;
 }
 
-.mainBanner .bannerCard h1 {
+.mainBanner .bannerCard p:last-of-type {
     color: var(--white);
     font-family: Montserrat;
     font-size: 50px;
