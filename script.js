@@ -20,3 +20,41 @@ document.querySelectorAll(".faqCard").forEach(function (card) {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const header = document.querySelector("header");
+    const topbar = document.querySelector(".contact");
+
+    let headerHeight = header.offsetHeight;
+    let topbarHeight = topbar ? topbar.offsetHeight : 0;
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+
+        const st = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (st >= 1) {
+
+            header.classList.add("fixedHeader");
+
+            if (st > lastScrollTop) {
+                /* scroll para baixo → esconde tudo */
+                header.style.transform = `translateY(-${headerHeight}px)`;
+            } else {
+                /* scroll para cima → mostra só o mainHeader */
+                header.style.transform = `translateY(-${topbarHeight}px)`;
+            }
+
+            lastScrollTop = st <= 0 ? 0 : st;
+
+        } else {
+            /* topo da página */
+            header.style.transform = "translateY(0)";
+            header.classList.remove("fixedHeader");
+        }
+
+    }, false);
+});
