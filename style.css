@@ -54,7 +54,7 @@ li {
     height: 40px;
 }
 
-.contact .headerWrapper {
+.contentHeader .contact .container {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -63,18 +63,19 @@ li {
     justify-content: end;
 }
 
-.contact .headerWrapper .headerInfo {
+.contact .container .headerInfo {
     display: flex;
     flex-direction: row;
     gap: 5px;
+
 }
 
-.contact .headerWrapper .headerInfo img {
+.contact .container .headerInfo img {
     width: 20px;
     height: 20px;
 }
 
-.contact .headerWrapper .headerInfo p {
+.contact .container .headerInfo p {
     color: #FFF;
     font-size: 14px;
     font-style: normal;
@@ -88,12 +89,12 @@ li {
     color: var(--white);
 }
 
-.mainHeader .mainHeaderWrapper {
+.mainHeader .container {
     display: flex;
     flex-direction: row;
-    gap: 210px;
     height: 100px;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -145,6 +146,7 @@ li {
 
 .mainHeader .headerWppBtn:hover {
     transform: scale(1.03);
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25);
 }
 
 .mainHeader .headerWppBtn a {
@@ -243,6 +245,7 @@ li {
 
 .mainBanner .bannerCard .wppBtn:hover {
     transform: scale(1.02);
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25);
 }
 
 #solution {
@@ -315,6 +318,7 @@ li {
 
 .wppBtn:hover {
     transform: scale(1.02);
+    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.25);
 }
 
 #solution .city .pin {
@@ -503,6 +507,11 @@ li {
     display: flex;
     align-items: center; 
     gap: 10px;   
+    color: var(--blackTxt);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 #descarte .descarteInfos .list ul li::before {
@@ -737,8 +746,17 @@ footer .copyrights a {
         display: none;
     }
 
-        .wppBtn {
+    .wppBtn {
         width: 100%;
+    }
+
+    .mainBanner .bannerCard {
+        max-width: 70%;
+    }
+
+    .mainBanner .bannerCard .wppBtn {
+        max-width: 100%;
+        font-size: 20px;
     }
 
     /* cta */
@@ -755,11 +773,15 @@ footer .copyrights a {
         width: 60%;
     }
 
+    footer .infos .social a {
+        
+    }
+
     footer .copyrights span, footer .copyrights p, footer .copyrights a {
         font-size: 12px;
     }
 
-    footer .infos .social a:hover {
+    footer .infos .social a:hover,  .infoCards:hover {
         transform: none;
     }
 }
